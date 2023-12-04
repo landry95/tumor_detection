@@ -20,22 +20,22 @@ from keras import layers
 from keras.models import Model, Sequential
 from keras.optimizers import Adam, RMSprop
 from keras.callbacks import EarlyStopping
-from data_visualization import visualize_data
-from data_visualization import visualize_image_distribution
 
-from show_img import visualize_img
+
 
 RANDOM_SEED = 123
 
 
 
 ################ VISUALISE THE DATA BEFORE SPLITING ##########################
+from data_visualization import visualize_image_distribution
 yes_folder = 'data/yes'
 no_folder = 'data/no'
 visualize_image_distribution(yes_folder, no_folder)
 
 
 ################ SPLIT DATA ##########################
+
 from split_data import split_dataset
 original_dataset_path = 'data'
 new_dataset_path = 'dataset'
@@ -43,10 +43,12 @@ split_dataset(original_dataset_path, new_dataset_path)
 
 
 ################ VISUALISE THE DATA AFTER SPLITING ##########################
+from data_visualization import visualize_data
 visualize_data()
 
 
 ################ PLOT SAMPLE IMAGES ##########################
+from show_img import visualize_img
 visualize_img()
 
 
