@@ -1,4 +1,4 @@
-```markdown
+
 # Tumor detection
 
 ## Overview
@@ -29,7 +29,7 @@ To get started with the project, follow these steps:
 1. Clone the repository to your local machine.
    ```bash
    git clone https://github.com/yourusername/your-repo.git
-   ```
+   
 
 2. Install the required dependencies.
    ```bash
